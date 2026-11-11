@@ -1,0 +1,36 @@
+:root {
+  --brand: #173b57;
+  --brand-light: #e8f1f7;
+  --ink: #172531;
+  --muted: #647481;
+  --border-color: #dce4ea;
+  --page: #f5f7f8;
+}
+
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3 { letter-spacing: -.025em; }
+.page-heading { max-width: 720px; }
+.page-heading p { color: var(--muted); font-size: 1.05rem; }
+.card { border: 1px solid var(--border-color); border-radius: 16px; box-shadow: 0 6px 20px rgba(23, 59, 87, .045); }
+.btn { border-radius: 9px; font-weight: 650; }
+.btn-primary { --bs-btn-bg: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: #0f2d43; --bs-btn-hover-border-color: #0f2d43; }
+.btn-outline-primary { --bs-btn-color: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand); --bs-btn-hover-border-color: var(--brand); }
+.form-control, .form-select { border-color: #cbd7df; border-radius: 9px; padding: .65rem .8rem; }
+.form-control:focus, .form-select:focus { border-color: #527d9e; box-shadow: 0 0 0 .2rem rgba(23, 59, 87, .12); }
+.form-label { font-weight: 650; }
+.table { --bs-table-bg: transparent; }
+.table thead th { color: #526574; font-size: .78rem; letter-spacing: .055em; text-transform: uppercase; border-bottom-width: 1px; }
+.table td { vertical-align: middle; }
+.badge-course { display: inline-block; padding: .3rem .5rem; margin: .12rem; border-radius: 7px; background: var(--brand-light); color: var(--brand); font-weight: 650; font-size: .78rem; }
+.empty-state { color: var(--muted); padding: 3rem 1rem; text-align: center; }
+.nav-tabs .nav-link { color: var(--muted); font-weight: 650; }
+.nav-tabs .nav-link.active { color: var(--brand); }
+.alert { border-radius: 10px; }
+.required::after { content: " *"; color: #a82c34; }
