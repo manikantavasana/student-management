@@ -59,18 +59,6 @@ Open `http://localhost:4200`.
 
 Angular runs on port `4200` and forwards `/api` requests to the Spring Boot backend on port `8081` using `frontend/proxy.conf.json`. Spring Boot uses `8081` by default and can be overridden with the `SERVER_PORT` environment variable. If the backend port changes, update the proxy target to use the same port.
 
-### Generated local files
-
-The repository does not include generated files or downloaded dependencies:
-
-- `frontend/node_modules` is created by `npm install`.
-- `frontend/dist` is created by `npm run build`.
-- `frontend/.angular` is created by the Angular CLI.
-- `backend/target` is created by Maven.
-- `backend/data` contains the local H2 database and is created when the backend starts.
-
-These directories are excluded from Git and should not be committed.
-
 ## Database
 
 The application uses a file-based H2 database, so no separate database installation is needed. Hibernate creates the tables when the backend starts. Existing data is retained between restarts.
