@@ -177,4 +177,3 @@ frontend/src/app
 ├── shared
 └── students
 ```
-
